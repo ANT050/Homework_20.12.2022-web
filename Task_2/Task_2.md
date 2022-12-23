@@ -38,14 +38,13 @@
 >
 >   **WHERE** name='Иван' **OR** address='Москва'
 
-:point_right: [Открыть скрин]( "Открыть")
 :point_right: [Перейти mysql онлайн ](https://onecompiler.com/mysql/3ysqhgccr "Перейти")
 
 ---
 
 <img src="1.jpg" height=250 width="250"/>
 
-:point_right: [Протокол](https://github.com/ANT050/Homework_20.12.2022-web/blob/main/Task_2/1.jpg "Открыть")
+:point_right: [Скрин решения](https://github.com/ANT050/Homework_20.12.2022-web/blob/main/Task_2/1.jpg "Открыть")
 
 ---
 
