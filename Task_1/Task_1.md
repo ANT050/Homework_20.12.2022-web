@@ -8,3 +8,7 @@ Cформировать массив с данными для блока «Оп�
 :point_right: [Перейти в php песочница](https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler "Перейти")
 
 ---
+
+:point_right: [Перейти к файлу cv.html](https://github.com/ANT050/Homework_20.12.2022-web/blob/main/Task_1/cv.html "Перейти")
+
+---
