@@ -1,22 +1,19 @@
 <?php
 $work_experience = [
 	[
-		'post' => 'Frontend Developer',
-		'description' => 'Frontend communicatio cum tincidunt, commutatio notitia inter servientibus',
-    'date_start' => '15.01.2022',
-    'date_end' => ''
+		'position' => 'Frontend Developer',
+		'date' => '15.01.2022 - ',
+		'description' => 'Frontend communicatio cum tincidunt, commutatio notitia inter servientibus'
 	],
   [
-		'post' => 'Backend Developer',
-		'description' => 'interaction with databases, exchange of information between servers, interaction 								with other services',
-		'date_start' => '10.01.2020',
-		'date_end' => '10.01.2021'
+		'position' => 'Backend Developer',
+		'date' => '10.01.2020 - 10.01.2021',
+		'description' => 'interaction with databases, exchange of information between servers, interaction with other services'
   ],
   [
-		'post' => 'Web Developer',
-		'description' => 'development and support of a corporate website, development of new and support of existing functionality',
-		'date_start' => '05.01.2018',
-		'date_end' => '05.01.2020'
+		'position' => 'Web Developer',
+		'date' => '05.01.2018 - 05.01.2020',
+		'description' => 'development and support of a corporate website, development of new and support of existing functionality'
   ],   
 ];
 ?>
@@ -29,8 +26,8 @@ $work_experience = [
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
@@ -109,24 +106,12 @@ $work_experience = [
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         
         
-        <?php foreach ($work_experience as $work_record):?>
+        <?php foreach ($work_experience as $key => $work_experience): ?>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><?=$work_record['post']?> </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$work_record['date_start']?> - <span class="w3-tag w3-teal w3-round">
-          <?php
-				if ($work_record['date_end'] == '')
-					{
-  						echo "Current";
-					}
-				else
-					{
-  						echo "{$work_record['date_end']}";
-					}
-				?>
-          </span></h6>
-          <p>
-          		<?=$work_record['description']?>
-          </p>
+          <h5 class="w3-opacity"><b><?=$work_experience['position']?> </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$work_experience['date']?><?php if ($key == 0):?>
+					<span class="w3-tag w3-teal w3-round">Current</span><?php endif; ?></h6>
+          <p><?=$work_experience['description']?></p>
           <hr>
         </div>
         <?php endforeach;?>
